@@ -1,0 +1,16 @@
+<script async="async" src="//platform.getbring.com/widgets/import.js"></script>
+<div data-bring-import>
+  <a href="https://www.getbring.com"
+    >Bring! Einkaufsliste App f&uuml;r iPhone und Android</a
+  >
+</div>
+<div itemtype="http://schema.org/Recipe">
+    <h1 itemprop="name"><%= name %></h1>
+<div>
+<ul>
+  <ul>
+    <% ingredients.forEach(function(ing) { %>
+    <li itemprop="ingredients"><%= ing %></li>
+    <% }); %>
+  </ul>
+</div>

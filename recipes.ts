@@ -23,9 +23,12 @@ export async function addRecipe(notion: Client, db: string, id: number) {
 
   const ingredients = (
     response.results[0] as any
-  )?.properties?.Zutaten?.multi_select.map(
+  )?.properties?.Zutaten?.multi_select?.map(
     (ingredient: any) => ingredient?.name
   );
 
-  return ingredients;
+  const name = (response.results[0] as any)?.properties?.Name?.title[0]?.text
+    ?.content;
+
+  return { ingredients: ingredients, name: name };
 }

@@ -20,9 +20,10 @@
   },
   "homepage": "https://github.com/timostermann/health-helper#readme",
   "dependencies": {
+    "@notionhq/client": "^1.0.1",
     "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "@notionhq/client": "^1.0.1"
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
